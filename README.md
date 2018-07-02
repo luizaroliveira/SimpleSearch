@@ -9,6 +9,7 @@ For running the system, no setup is necessary, just run the server script and th
 ### Prerequisites
 
 **python3**: any version of python 3 with no additional libs.
+
 **port 9001** available: The server will run over port 9001 
 
 ### How to query
