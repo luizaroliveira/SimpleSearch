@@ -28,8 +28,6 @@ def run(port=9001):
             connection, client_address = sock.accept()
 
             try:
-                print('Request received from', client_address)
-
                 # Handlind socket request and returning search result
                 while True:
                     # Receives queries up to 2KB
@@ -51,6 +49,7 @@ def run(port=9001):
                 connection.close()
     except KeyboardInterrupt:
         print('Shutting down server...')
+        exit(0)
 
 if __name__ == "__main__":
     run()

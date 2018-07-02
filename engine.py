@@ -62,9 +62,6 @@ def tokenize(text):
 def query(terms):
     """" Returns a list of files where all the terms of the query can be found."""
 
-    # For calculating the query time
-    start = datetime.now()
-
     # The query must go through the same text tokenizing used for the files.
     tokens = tokenize(terms)
 
@@ -73,8 +70,6 @@ def query(terms):
 
     # Finds the files that contain all the tokens
     result = set.intersection(*result_sets)
-
-    print('Results: %s. Time spent: %s' % (len(result), (datetime.now()-start).microseconds))
 
     # Returns a list with the names of the results
     return [FILE_NAMES[index] for index in result]
