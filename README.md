@@ -36,6 +36,23 @@ data\billposters.txt
 ...
 ```
 
+In unix based systems, can use the "time" command to check the time taken for the search to respond. 
+
+```
+time python3 search.py "alien"
+Foram encontradas 12 ocorrências pelo termo: "alien"
+data/alien-apocalypse.txt
+data/alien-origin.txt
+...
+data/sex-files-alien-erotica-ii.txt
+data/time-enough-the-alien-conspiracy.txt
+
+real	0m0,039s
+user	0m0,034s
+sys	0m0,004s
+
+```
+
 ## How to run the tests
 
 The tests for the server and the engine run indepentently.
